@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Microsoft YaHei',SimHei,"΢���ź�","����";*/
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+}
+
+html {
+    font-size: 100px;
+}
+body{
+    background: #f5f5f5;
+    font-size: 0.12rem;
+
+}
+
+/*��ҳͷ������*/
+header {
+    height: 0.42rem;
+    background: #ff8a00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 0;
+}
+
+header h1 img {
+    width: 1rem;
+    height: 0.34rem;
+}
+
+header .icon {
+    font-size: 0;
+}
+header .icon img {
+    width: 0.23rem;
+    height: 0.29rem;
+    margin-left: 0.2rem;
+}
+.rentalAddr{
+    border-bottom: 1px solid black;
+    line-height: .3rem;
+}
+/* 普通登录 */
+.common>.comone>input:nth-of-type(1){
+    width: 100%;
+    height: .2rem;
+    border: 1px solid white;
+    font-size: 0.05rem;
+    padding-left: .1rem;
+}
+.common>.comone>input:nth-of-type(2){
+    width: 100%;
+    height: .2rem;
+    border: 1px solid white;
+    font-size: 0.05rem;
+    padding-left: .1rem;
+}
+.com{
+    display: flex;
+    text-align: center;
+}
+.common>.com>.common1{
+    color: green;
+    margin-left: 20%;
+    font-size: .2rem;
+    flex: 1;
+    border-bottom: 0.01rem solid red;
+    padding: 0;
+    margin: 0;
+    
+}
+.common>.com>.auth{
+    color: green;
+    margin-left: 10%;
+    font-size: .2rem;
+    flex: 1;
+    border-bottom: 0.01rem solid rgb(10, 10, 10);
+    padding: 0;
+    margin: 0;
+}
+.common>.comone>.common2{
+    background-color: red;
+    color: white;
+    display: block;
+    width: 50%;
+    margin: .1rem auto;
+    padding-left: 35%; 
+}
+/* 验证码登录 */
+.enter{
+    display: none;
+}
+.enter>input:nth-of-type(1){
+    width: 100%;
+    height: .2rem;
+    border: 1px solid white;
+    font-size: 0.05rem;
+    padding-left: .1rem;
+}
+.enter>input:nth-of-type(2){
+    width: 100%;
+    height: .2rem;
+    border: 1px solid white;
+    font-size: 0.05rem;
+    padding-left: .1rem;
+    margin-top: -.2rem;
+}
+.enter>.ring{
+    font-size: 0.05rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-top: -0.15rem;
+    position: relative;
+
+}
+.enter>.ringg{
+    position: relative;
+    top: 0.05rem;
+    border: 0.0rem solid orange;
+    background-color: orange;
+    margin-left: .5rem;
+    margin-top: 1rem;
+    padding-left: .7rem;
+    padding-right: .7rem;
+}
+
+.tishi>a:nth-of-type(1){
+    position: relative;
+    color: orange;
+    top: 0.1rem;
+}
+.tishi>a:nth-of-type(2){
+    float: right;
+    position: relative;
+    top: 0.1rem;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#"><img src="../img/index/logo.jpg" alt=""/></a></h1>
+        <ul class="icon">
+            <a href="#"><img src="../img/index/my.jpg" alt=""/></a>
+            <a href="#"><img src="../img/index/xiazai.jpg" alt=""/></a>
+        </ul>
+    </header>
+    <section class="rentalAddr">
+        <p><strong>首页</strong> > <span>我的</span> > <span>登录</span></p>
+    </section>
+    <!-- 普通登录 -->
+    <div class="common">
+        <div class="com">
+        <a href="#" class="common1">普通登录</a>
+        <a href="#" class="auth">验证码登录</a>
+        </div>
+        <br>
+        <div class="comone">
+        <input type="text" class="table"  placeholder="请输入手机号码">
+        <br>
+        <input type="password"  class="table1" placeholder="请输入密码">
+        <br>
+        <a href="#" class="common2"><span>立即登录</span></a>
+        </div>
+    </div>
+    
+    <!-- 验证登录 -->
+    <div class="enter">
+        <input type="text" class="enter1"  placeholder="请输入手机号">
+        <a href="#" class="ring" onclick="ffn()">发送验证码</a> &nbsp;&nbsp;&nbsp;&nbsp;<i></i>
+        <br>
+        <input type="password"  class="enter2" placeholder="请输入验证码">
+        <br>
+        <a href="#" class="ringg" ><span>验证并登录</span></a>
+    </div>
+     
+
+    <div class="tishi">
+        <a href="#">立即注册</a>
+        <a href="#">忘记密码</a>
+    </div>
+</body>
+</html>
+<script src="../js/my.js"></script>
+<script src="../js/jquery.js"></script>
+<script>
+    // 找到验证按钮
+    var auth = document.getElementsByClassName('auth')[0]
+    // 找到隐藏部分
+    var enter = document.getElementsByClassName('enter')[0]
+    // 找到普通登录
+    var comone = document.getElementsByClassName('comone')[0]
+    auth.addEventListener('touchstart',function(){
+        enter.style.display = 'block';
+        comone.style.display = 'none'
+        auth.style.borderBottom=' 0.01rem solid red';
+        common1.style.borderBottom=' 0.01rem solid black';
+
+
+    })
+    // 找到普通按钮
+    var common1 = document.getElementsByClassName('common1')[0]
+    common1.addEventListener('touchstart',function(){
+        enter.style.display = 'none';
+        comone.style.display = 'block'
+        auth.style.borderBottom=' 0.01rem solid black';
+        common1.style.borderBottom=' 0.01rem solid red';
+    })
+    // 发送验证码
+    // 找到发送验证码
+    var ring = document.getElementsByClassName('ring')[0]
+    var ringg = document.getElementsByClassName('ringg')[0]
+    var enter2 = document.getElementsByClassName('enter2')[0].value;
+    var nno;
+    function ffn() {
+        var num = 3;
+        var nno = setInterval(function(){
+            ring.disabled = true;
+            ring.innerHTML = num;
+            num--;
+            if (num == 0) {
+                clearInterval(nno);
+                alert(123456)
+                ring.disabled = false;
+                // enter2 == '123456' 
+                // return false
+            }else if(enter2 == ''){
+                ringg.addEventListener('touchstart',function(){
+                alert('登陆成功')
+                })
+                
+            }
+        },1000)
+    }
+</script>
