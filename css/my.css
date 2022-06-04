@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Microsoft YaHei',SimHei,"΢���ź�","����";*/
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+}
+
+html {
+    font-size: 100px;
+}
+body{
+    background: #f5f5f5;
+    font-size: 0.12rem;
+
+}
+
+/*��ҳͷ������*/
+header {
+    height: 0.42rem;
+    background: #ff8a00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: url(../img/my/bg1.png);
+}
+
+header h1 {
+    font-size: 0;
+}
+
+header h1 img {
+    width: 1rem;
+    height: 0.34rem;
+}
+
+header .icon_0 {
+    font-size: 0;
+}
+header .icon_0 img {
+    width: 0.23rem;
+    height: 0.29rem;
+    margin-left: 0.2rem;
+}
+/* 大图 */
+.icon{
+    position: relative;
+    height: 2rem;
+}
+.icon>img:nth-of-type(1){
+    width: 100%;
+   
+}
+.icon>img:nth-of-type(2){
+    position: relative;
+    top: -1.3rem;
+    left: 1.3rem;
+    block-size: .5rem;
+}
+.icon>a{
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid black;
+    color: white;
+    padding: .1rem .2rem;
+    top: -.9rem;
+    left: .7rem;
+}
+/* 分界 */
+.fj{
+    width: 100%;
+    height: .2rem;
+    background-color: rgb(255, 255, 255);
+    margin-top: -0.18rem;
+}
+/* 正文 */
+.font>li{
+    list-style: none;
+    line-height: .5rem;
+    border-bottom: 0.001rem solid black;
+    margin-left: .2rem;
+}
+.font>li>img{
+    margin-left: 2rem;
+    block-size: .1rem;
+}
+.font>li>a:hover{
+    color: red;
+}
+
+.font>li{
+    
+}
