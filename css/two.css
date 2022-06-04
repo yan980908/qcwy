@@ -91,8 +91,8 @@ header {
 
 .main>p {
     padding-left: .2rem;
-    font-size: .18rem;
-    color: rgb(210, 201, 201);
+    font-size: .14rem;
+    color: rgb(169, 168, 168);
 }
 
 .two {
@@ -112,6 +112,13 @@ header {
 
 .two>li:first-of-type {
     position: relative;
+}
+
+i {
+    padding-right: 1.5rem;
+    padding-top: .1rem;
+    font-size: .2rem;
+    color: red;
 }
 
 button {

@@ -114,6 +114,14 @@ header {
     position: relative;
 }
 
+i {
+    padding-right: 1.5rem;
+    padding-top: .1rem;
+    font-size: .2rem;
+    color: red;
+}
+
+
 button {
     /* display: flex; */
     width: 1rem;
